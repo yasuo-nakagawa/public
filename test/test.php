@@ -16,7 +16,7 @@ $count++;
 $_SESSION['count'] = $count;
 
 
-// defineの値は環境によって変えてください。
+// defineの値は環境によって変えてください。.
 define('HOSTNAME', 'db');
 define('DATABASE', 'database');
 define('USERNAME', 'db-user');
