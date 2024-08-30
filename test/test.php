@@ -1,4 +1,16 @@
 <?php
+session_start();
+if(isset($_SESSION['count'])) {
+  $count = $_SESSION['count'];
+} else {
+  $count = 0;
+}
+ 
+echo $count;
+$count++;
+$_SESSION['count'] = $count;
+
+
 // defineの値は環境によって変えてください。
 define('HOSTNAME', 'db');
 define('DATABASE', 'database');
